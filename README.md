@@ -1,6 +1,6 @@
-# 🏙️ Isometric Clicker Builder
+# 🏙️ VIllage Clicker
 
-**Isometric Clicker Builder** es un videojuego incremental basado en mecánicas de clicker, gestión urbana y automatización progresiva, presentado desde una perspectiva **isométrica limpia y expansiva**. El jugador comienza en un entorno simple, generando recursos con clics manuales, pero evoluciona hacia una ciudad automatizada y optimizada mediante sistemas complejos de producción, especialización y mejora continua.
+**Village Clicker** es un videojuego incremental basado en mecánicas de clicker, gestión urbana y automatización progresiva, presentado desde una perspectiva **isométrica limpia y expansiva**. El jugador comienza en un entorno simple, generando recursos con clics manuales, pero evoluciona hacia una ciudad automatizada y optimizada mediante sistemas complejos de producción, especialización y mejora continua.
 
 ---
 
@@ -107,3 +107,4 @@ Este concepto puede implementarse en:
 
 
 ❤️ Créditos Creado con mucho cariño y algo de nostalgia por nuestra segunda Game Jam: Hiromi Acosta, Yeison Navarro, Santiago Pineda 𝘆 Edmundo Rabelo.
+

@@ -14,15 +14,6 @@ UI/UX Art: Iconos, botones, paneles y elementos interactivos del HUD.
 
 Mockups: Diseños de referencia para la disposición visual del juego.
 
-📁 **Estructura de Carpetas**
-art/
-├── buildings/
-├── tilesets/
-├── backgrounds/
-├── animations/
-├── ui/
-└── mockups/
-
 🧩 **Herramientas y Formatos**
 Formato principal: .png, .svg, .psd y .aseprite
 

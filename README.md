@@ -1,5 +1,5 @@
 🔊 **Village Clicker** – **Rama sound**
-Esta rama contiene todo el diseño y desarrollo del paisaje sonoro de Village Clicker. Desde efectos alquímicos hasta ambientes urbanos encantados, aquí se organiza y produce el contenido auditivo que da vida al juego.
+Esta rama contiene todo el diseño y desarrollo del paisaje sonoro de Village Clicker. Desde efectos alquímicos hasta ambientes urbanos encantados, aquí se organiza y produce el contenido auditivo que da vida al juego con 4 canciones especiales para cada apartado y 60 SFX.
 
 🎧 **Dirección de Sonido**
 El diseño sonoro está enfocado en una mezcla entre:

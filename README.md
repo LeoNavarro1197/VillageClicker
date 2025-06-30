@@ -99,7 +99,7 @@ Este concepto puede implementarse en:
 
 ## 🧠 Conclusión
 
-**Isometric Clicker Builder** es más que un clicker: es una simulación ligera de crecimiento urbano y gestión inteligente. Con una evolución clara desde el juego casual hasta la automatización avanzada, permite al jugador construir su propio ecosistema y entender las dinámicas de progreso, eficiencia y diseño modular.
+**Village Clicker** es más que un clicker: es una simulación ligera de crecimiento urbano y gestión inteligente. Con una evolución clara desde el juego casual hasta la automatización avanzada, permite al jugador construir su propio ecosistema y entender las dinámicas de progreso, eficiencia y diseño modular.
 
 ---
 

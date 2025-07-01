@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class DayNightManager : MonoBehaviour
 {
@@ -11,9 +13,34 @@ public class DayNightManager : MonoBehaviour
     [SerializeField] private float currentTime = 0f;
     [SerializeField] private float transitionSpeed = 2f;
 
+    [Header("Referencias")]
+    public Volume globalVolume;
+
+    [Header("Configuración")]
+    public float postExposureTarget = 0f;
+    public float velocidadCambio = 1f;
+
+    private ColorAdjustments colorAdjustments;
+
     // Eventos para notificar cambios
     public System.Action OnDayStart;
     public System.Action OnNightStart;
+
+    void Start()
+    {
+        // Obtener el componente ColorAdjustments del Volume
+        if (globalVolume != null)
+        {
+            if (globalVolume.profile.TryGet<ColorAdjustments>(out colorAdjustments))
+            {
+                Debug.Log("ColorAdjustments encontrado!");
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró ColorAdjustments en el Volume Profile");
+            }
+        }
+    }
 
     void Update()
     {
@@ -41,12 +68,14 @@ public class DayNightManager : MonoBehaviour
         {
             // Cambiar a día
             OnDayStart?.Invoke();
+
             Debug.Log("¡Amanecer! Comenzó el día");
         }
         else
         {
             // Cambiar a noche
             OnNightStart?.Invoke();
+            colorAdjustments.postExposure.value += -2 * velocidadCambio;
             Debug.Log("¡Atardecer! Comenzó la noche");
         }
     }

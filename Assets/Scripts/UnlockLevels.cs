@@ -12,6 +12,7 @@ public class UnlockLevels : MonoBehaviour
 
     [SerializeField] private GameObject ayuntamientoBase, ayuntamientoLevel1, ayuntamientoLevel2, ayuntamientoLevel3;
     [SerializeField] private GameObject aserraderoBase, aserraderoLeven2, aserraderoLevel3;
+    [SerializeField] private GameObject mineriaBase, mineriaLevel2, mineriaLevel3;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +24,8 @@ public class UnlockLevels : MonoBehaviour
             ayuntamientoLevel1.SetActive(true);
             aserraderoBase.SetActive(false);
             aserraderoLeven2.SetActive(true);
+            mineriaBase.SetActive(false);
+            mineriaLevel2.SetActive(true);
         }
 
         if (isLevel2Unlocked)
@@ -32,6 +35,8 @@ public class UnlockLevels : MonoBehaviour
             ayuntamientoLevel2.SetActive(true);
             aserraderoLeven2.SetActive(false);
             aserraderoLevel3.SetActive(true);
+            mineriaLevel2.SetActive(false);
+            mineriaLevel3.SetActive(true);
         }
 
         if (isLevel3Unlocked)

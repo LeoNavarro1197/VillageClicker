@@ -5,7 +5,6 @@ using TMPro;
 public class Clicker : MonoBehaviour
 {
     public Items items;
-    private SpriteRenderer spriteRenderer;
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
@@ -14,7 +13,6 @@ public class Clicker : MonoBehaviour
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateScore();
     }
 
@@ -25,7 +23,6 @@ public class Clicker : MonoBehaviour
         if (gameObject.tag == "Arbol")
         {
             items.woodScore++;
-            spriteRenderer.color = Color.gray;
             isClickedTree = true;
             UpdateScore();
         }
@@ -33,22 +30,8 @@ public class Clicker : MonoBehaviour
         if(gameObject.tag == "Piedra")
         {
             items.rockScore++;
-            spriteRenderer.color = Color.gray;
             isClickedRock = true;
             UpdateScore();
-        }
-    }
-
-    private void OnMouseUp()
-    {
-        if (gameObject.tag == "Arbol")
-        {
-            spriteRenderer.color = Color.green;
-        }
-
-        if (gameObject.tag == "Piedra")
-        {
-            spriteRenderer.color = Color.blue;
         }
     }
 

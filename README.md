@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Concepto General   
+## 🎯 Concepto General    
 
 El corazón del juego gira en torno a una **progresión fluida desde la simplicidad manual hacia una automatización total**. El jugador debe construir, mejorar y organizar una ciudad a partir de recursos generados por clics. Con el tiempo, se desbloquean nuevas capas de complejidad como trabajadores automáticos, edificios interconectados, mantenimiento, producción encadenada y scripts de optimización.
 

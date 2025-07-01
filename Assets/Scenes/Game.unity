@@ -9876,6 +9876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: {fileID: 1252792265}
+  managerPrices: {fileID: 1494571068}
   nivel1: {fileID: 1805638852}
   nivel2: {fileID: 1756227420}
   nivel3: {fileID: 183317571}
@@ -11244,6 +11245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: {fileID: 1252792265}
+  managerPrices: {fileID: 1494571068}
   nivel1: {fileID: 254939690}
   nivel2: {fileID: 252550765}
   nivel3: {fileID: 2105026793}
@@ -12642,6 +12644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06af545e3715cdd468a4825cc78fa97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  houseAserraderoLevel1Price: 25
+  houseAserraderoLevel2Price: 30
+  houseAserraderoLevel3Price: 35
+  houseMineroLevel1Price: 25
+  houseMineroLevel2Price: 30
+  houseMineroLevel3Price: 35
 --- !u!4 &1494571069
 Transform:
   m_ObjectHideFlags: 0
@@ -12902,6 +12910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: {fileID: 1252792265}
+  managerPrices: {fileID: 1494571068}
   nivel1: {fileID: 403812008}
   nivel2: {fileID: 545541827}
   nivel3: {fileID: 880691536}
@@ -13914,6 +13923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: {fileID: 1252792265}
+  managerPrices: {fileID: 1494571068}
   nivel1: {fileID: 2049673243}
   nivel2: {fileID: 1840809097}
   nivel3: {fileID: 434768365}

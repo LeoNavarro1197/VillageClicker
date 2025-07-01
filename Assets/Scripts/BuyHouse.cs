@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuyHouse : MonoBehaviour
 {
     public Items items;
-    ManagerPrices managerPrices;
+    public ManagerPrices managerPrices;
     [SerializeField] private GameObject nivel1, nivel2, nivel3;
     [SerializeField] private BoxCollider2D espacioCasaBoxCollider;
     [SerializeField] private SpriteRenderer espacioCasaSpriteRenderer;

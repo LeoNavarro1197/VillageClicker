@@ -7,6 +7,9 @@ public class Clicker : MonoBehaviour
     public Items items;
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
     public bool isClickedTree = false, isClickedRock = false;
 
     void Start()
@@ -17,6 +20,8 @@ public class Clicker : MonoBehaviour
 
     private void OnMouseDown()
     {
+        audioSource.PlayOneShot(audioSource.clip);
+
         if (gameObject.tag == "Arbol")
         {
             items.woodScore++;

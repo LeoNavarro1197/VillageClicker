@@ -10,11 +10,16 @@ public class BuyHouse : MonoBehaviour
     [SerializeField] private BoxCollider2D espacioCasaBoxCollider;
     [SerializeField] private SpriteRenderer espacioCasaSpriteRenderer;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
     private void OnMouseDown()
     {
+        audioSource.PlayOneShot(audioSource.clip);
+
         /* COMPRAR CASAS DE ASERRADORES*/
 
-        if(gameObject.tag == "CasaAserradero")
+        if (gameObject.tag == "CasaAserradero")
         {
             if (items.woodScore >= managerPrices.houseAserraderoLevel1Price && espacioCasaSpriteRenderer.enabled == true)
             {

@@ -11,6 +11,7 @@ public class UnlockLevels : MonoBehaviour
     public float zoomSpeed = 2f;
 
     [SerializeField] private GameObject ayuntamientoBase, ayuntamientoLevel1, ayuntamientoLevel2, ayuntamientoLevel3;
+    [SerializeField] private GameObject aserraderoBase, aserraderoLeven2, aserraderoLevel3;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +21,8 @@ public class UnlockLevels : MonoBehaviour
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, targetSizeLevel1, zoomSpeed * Time.deltaTime);
             ayuntamientoBase.SetActive(false);
             ayuntamientoLevel1.SetActive(true);
+            aserraderoBase.SetActive(false);
+            aserraderoLeven2.SetActive(true);
         }
 
         if (isLevel2Unlocked)
@@ -27,6 +30,8 @@ public class UnlockLevels : MonoBehaviour
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, targetSizeLevel2, zoomSpeed * Time.deltaTime);
             ayuntamientoLevel1.SetActive(false);
             ayuntamientoLevel2.SetActive(true);
+            aserraderoLeven2.SetActive(false);
+            aserraderoLevel3.SetActive(true);
         }
 
         if (isLevel3Unlocked)

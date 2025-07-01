@@ -8,10 +8,13 @@ public class Estatua : MonoBehaviour
     public Items items;
     [SerializeField] private GameObject estatuaDesbloqueada;
 
+    [SerializeField] private GameObject panelEstatua;
+
     public void DesbloquearEstatua()
     {
         if (items.woodScore >= 10000 && items.rockScore >= 10000)
         {
+            panelEstatua.SetActive(true);
             estatuaDesbloqueada.SetActive(true);
             items.woodScore = items.woodScore - 10000;
             items.rockScore = items.rockScore - 10000;

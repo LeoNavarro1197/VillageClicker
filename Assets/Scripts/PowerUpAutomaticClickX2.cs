@@ -16,6 +16,9 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
 
     private bool isWoodFinished = false, isRockFinished = false;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
     void Update()
     {
         if (isWoodFinished && isRockFinished)
@@ -90,6 +93,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.woodScore >= 100)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickWood(automaticClickSecondsWood - 9.1f);
             buttonAutomaticClickWoodLevel1.gameObject.SetActive(false);
             buttonAutomaticClickWoodLevel2.gameObject.SetActive(true);
@@ -102,6 +106,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.woodScore >= 200)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickWood(automaticClickSecondsWood - 9.2f);
             buttonAutomaticClickWoodLevel2.gameObject.SetActive(false);
             buttonAutomaticClickWoodLevel3.gameObject.SetActive(true);
@@ -114,6 +119,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.woodScore >= 300)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickWood(automaticClickSecondsWood - 9.3f);
             items.woodScore = items.woodScore - 300;
             items.woodScoreText.text = items.itemWoodName + ": " + items.woodScore.ToString();
@@ -132,6 +138,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.rockScore >= 100)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickRock(automaticClickSecondsRock - 9.1f);
             buttonAutomaticClickRockLevel1.gameObject.SetActive(false);
             buttonAutomaticClickRockLevel2.gameObject.SetActive(true);
@@ -144,6 +151,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.rockScore >= 200)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickRock(automaticClickSecondsRock - 9.2f);
             buttonAutomaticClickRockLevel2.gameObject.SetActive(false);
             buttonAutomaticClickRockLevel3.gameObject.SetActive(true);
@@ -156,6 +164,7 @@ public class PowerUpAutomaticClickX2 : MonoBehaviour
     {
         if (items.rockScore >= 300)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             RestartAutomaticClickRock(automaticClickSecondsRock - 9.3f);
             items.rockScore = items.rockScore - 300;
             items.rockScoreText.text = items.itemRockName + ": " + items.rockScore.ToString();

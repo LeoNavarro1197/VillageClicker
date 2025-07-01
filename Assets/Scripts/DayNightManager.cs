@@ -22,6 +22,8 @@ public class DayNightManager : MonoBehaviour
 
     private ColorAdjustments colorAdjustments;
 
+    public bool isLight = false;
+
     // Eventos para notificar cambios
     public System.Action OnDayStart;
     public System.Action OnNightStart;
@@ -68,17 +70,39 @@ public class DayNightManager : MonoBehaviour
         {
             // Cambiar a día
             OnDayStart?.Invoke();
-
+            isLight = false;
+            StartCoroutine(CambiarPostExposureSuave(2f, 1f));
             Debug.Log("¡Amanecer! Comenzó el día");
         }
         else
         {
             // Cambiar a noche
             OnNightStart?.Invoke();
-            colorAdjustments.postExposure.value += -2 * velocidadCambio;
+            isLight = true;
+            StartCoroutine(CambiarPostExposureSuave(-2f, 1f));
             Debug.Log("¡Atardecer! Comenzó la noche");
         }
     }
+    System.Collections.IEnumerator CambiarPostExposureSuave(float cambio, float duracion)
+    {
+        if (colorAdjustments == null) yield break;
+
+        float valorInicial = colorAdjustments.postExposure.value;
+        float valorObjetivo = valorInicial + cambio;
+        float tiempo = 0f;
+
+        while (tiempo < duracion)
+        {
+            tiempo += Time.deltaTime;
+            float t = tiempo / duracion;
+
+            colorAdjustments.postExposure.value = Mathf.Lerp(valorInicial, valorObjetivo, t);
+            yield return null;
+        }
+
+        colorAdjustments.postExposure.value = valorObjetivo;
+    }
+
 
     // Métodos públicos para control externo
     public void ForceDay()

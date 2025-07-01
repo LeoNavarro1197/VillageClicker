@@ -9,6 +9,8 @@ public class ControlMenus : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
 
+    [SerializeField] private GameObject flecha;
+
     private void OnMouseDown()
     {
         audioSource.PlayOneShot(audioSource.clip);
@@ -16,6 +18,7 @@ public class ControlMenus : MonoBehaviour
         if (gameObject.tag == "Ayuntamiento")
         {
             panelPowerUps.SetActive(true);
+            flecha.SetActive(false);
         }
     }
 

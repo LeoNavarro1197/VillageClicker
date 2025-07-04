@@ -3,7 +3,7 @@
 **Village Clicker** es un videojuego incremental basado en mecánicas de clicker, gestión urbana y automatización progresiva, presentado desde una perspectiva **isométrica limpia y expansiva**. El jugador comienza en un entorno simple, generando recursos con clics manuales, pero evoluciona hacia una ciudad automatizada y optimizada mediante sistemas complejos de producción, especialización y mejora continua.
  
 ---
-
+ 
 ## 🎯 Concepto General      
 
 El corazón del juego gira en torno a una **progresión fluida desde la simplicidad manual hacia una automatización total**. El jugador debe construir, mejorar y organizar una ciudad a partir de recursos generados por clics. Con el tiempo, se desbloquean nuevas capas de complejidad como trabajadores automáticos, edificios interconectados, mantenimiento, producción encadenada y scripts de optimización.

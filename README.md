@@ -10,8 +10,7 @@ El corazón del juego gira en torno a una **progresión fluida desde la simplici
 
 ---
  
-## 🧱 Mecánica Principal
-
+## 🧱 Mecánica Principal 
 - 🖱️ **Clic para generar oro** (recurso base). 
 - 🏗️ **Construcción** de edificios que generan o procesan recursos. 
 - 🤖 **Automatización gradual** con trabajadores, máquinas y sistemas de producción.
